@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kalam:wght@300;400;700&family=Homemade+Apple&family=Patrick+Hand&family=Dancing+Script:wght@400..700&family=Shadows+Into+Light&family=Indie+Flower&family=Gochi+Hand&family=Pacifico&family=Bad+Script&family=Satisfy&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  
+  /* MULTIPLE HANDWRITING FONTS */
+  --font-family-handwriting1: "Caveat", cursive;
+  --font-family-handwriting2: "Kalam", cursive;
+  --font-family-handwriting3: "Homemade Apple", cursive;
+  --font-family-handwriting4: "Patrick Hand", cursive;
+  --font-family-handwriting5: "Dancing Script", cursive;
+  --font-family-handwriting6: "Shadows Into Light", cursive;
+  --font-family-handwriting7: "Indie Flower", cursive;
+  --font-family-handwriting8: "Gochi Hand", cursive;
+  --font-family-handwriting9: "Pacifico", cursive;
+  --font-family-handwriting10: "Bad Script", cursive;
+  --font-family-handwriting11: "Satisfy", cursive;
+  
+  /* Font utility classes */
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* BASE HANDWRITING FONT CLASSES with font-size adjustments */
+.font-handwriting1 {
+  font-family: var(--font-family-handwriting1);
+  font-weight: 400;
+  font-size: 1.125rem; /* 18px */
+}
+
+.font-handwriting2 {
+  font-family: var(--font-family-handwriting2);
+  font-weight: 300;
+  font-size: 1rem; /* 16px */
+}
+
+.font-handwriting3 {
+  font-family: var(--font-family-handwriting3);
+  font-weight: 400;
+  font-size: 1.125rem; /* 18px */
+}
+
+.font-handwriting4 {
+  font-family: var(--font-family-handwriting4);
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+}
+
+.font-handwriting5 {
+  font-family: var(--font-family-handwriting5);
+  font-weight: 400;
+  font-size: 1.125rem; /* 18px */
+}
+
+.font-handwriting6 {
+  font-family: var(--font-family-handwriting6);
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+}
+
+.font-handwriting7 {
+  font-family: var(--font-family-handwriting7);
+  font-weight: 400;
+  font-size: 1.125rem; /* 18px */
+}
+
+.font-handwriting8 {
+  font-family: var(--font-family-handwriting8);
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+}
+
+.font-handwriting9 {
+  font-family: var(--font-family-handwriting9);
+  font-weight: 400;
+  font-size: 1.125rem; /* 18px */
+}
+
+.font-handwriting10 {
+  font-family: var(--font-family-handwriting10);
+  font-weight: 400;
+  font-size: 1.125rem; /* 18px */
+}
+
+.font-handwriting11 {
+  font-family: var(--font-family-handwriting11);
+  font-weight: 400;
+  font-size: 1.125rem; /* 18px */
+}
+
+/* For Tailwind utility usage */
+@layer utilities {
+  .font-academic { 
+    font-family: var(--font-family-handwriting1);
+    font-size: 1.125rem;
+  }
+  .font-casual { 
+    font-family: var(--font-family-handwriting2);
+    font-size: 1rem;
+  }
+  .font-artistic { 
+    font-family: var(--font-family-handwriting3);
+    font-size: 1.125rem;
+  }
+  .font-notes { 
+    font-family: var(--font-family-handwriting4);
+    font-size: 1rem;
+  }
+  .font-formal { 
+    font-family: var(--font-family-handwriting5);
+    font-size: 1.125rem;
+  }
+  .font-print { 
+    font-family: var(--font-family-handwriting6);
+    font-size: 1rem;
+  }
+  .font-creative { 
+    font-family: var(--font-family-handwriting7);
+    font-size: 1.125rem;
+  }
+  .font-relaxed { 
+    font-family: var(--font-family-handwriting8);
+    font-size: 1rem;
+  }
+  .font-playful { 
+    font-family: var(--font-family-handwriting9);
+    font-size: 1.125rem;
+  }
+  .font-elegant { 
+    font-family: var(--font-family-handwriting10);
+    font-size: 1.125rem;
+  }
+  .font-signature { 
+    font-family: var(--font-family-handwriting11);
+    font-size: 1.125rem;
+  }
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* ENHANCED HANDWRITING STYLES */
+.handwriting-academic {
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+
+.handwriting-casual {
+  letter-spacing: -0.3px;
+  line-height: 1.6;
+}
+
+.handwriting-artistic {
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.handwriting-notes {
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.handwriting-formal {
+  letter-spacing: 1.2px;
+  line-height: 2.2;
+}
+
+.handwriting-print {
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+}
+
+/* Additional styles for fonts 7-11 */
+.handwriting-creative {
+  letter-spacing: 0.4px;
+  line-height: 1.7;
+}
+
+.handwriting-relaxed {
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+}
+
+.handwriting-playful {
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+}
+
+.handwriting-elegant {
+  letter-spacing: 1.1px;
+  line-height: 2;
+}
+
+.handwriting-signature {
+  letter-spacing: 0.7px;
+  line-height: 1.8;
+}
+
+/* Enhanced handwriting effects - IMPROVED */
+.ink-bleed {
+  text-shadow: 
+    0.3px 0.3px 0px rgba(0,0,0,0.15),
+    0.2px 0px 0px rgba(0,0,0,0.1),
+    0px 0.2px 0px rgba(0,0,0,0.1),
+    0.5px 0.5px 0.5px rgba(0,0,0,0.05);
+}
+
+/* Paper texture effect - IMPROVED */
+.paper-texture {
+  background-image: 
+    radial-gradient(#0000000a 0.5px, transparent 0.5px),
+    radial-gradient(#00000005 0.5px, transparent 0.5px);
+  background-size: 15px 15px;
+  background-position: 0 0, 7.5px 7.5px;
+}
+
+/* Lined paper effect - IMPROVED */
+.page-preview {
+  background: linear-gradient(to bottom, transparent 95%, rgba(0,0,0,0.06) 96%);
+  background-size: 100% 1.8em;
+  line-height: 1.8em;
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+/* LINED PAPER EFFECT */
+.lined-paper {
+  background-image: linear-gradient(to bottom, transparent 95%, rgba(0,0,0,0.08) 96%);
+  background-size: 100% 1.8em;
+  line-height: 1.8em;
+  padding: 1em 0;
+}
+
+.notebook-margin {
+  border-left: 2px solid #ef4444;
+  padding-left: 2em;
+  margin-left: 1em;
+  position: relative;
+}
+
+.notebook-margin::before {
+  content: '';
+  position: absolute;
+  left: -1em;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ef4444;
+  opacity: 0.3;
+}
+
+/* Pencil sketch effect */
+.pencil-effect {
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(0,0,0,0.03) 2%, 
+    transparent 4%,
+    rgba(0,0,0,0.03) 6%,
+    transparent 8%,
+    rgba(0,0,0,0.03) 10%,
+    transparent 12%,
+    rgba(0,0,0,0.03) 14%,
+    transparent 16%,
+    rgba(0,0,0,0.03) 18%,
+    transparent 20%,
+    rgba(0,0,0,0.03) 22%,
+    transparent 24%,
+    rgba(0,0,0,0.03) 26%,
+    transparent 28%,
+    rgba(0,0,0,0.03) 30%,
+    transparent 100%);
+  background-size: 30px 100%;
+  background-repeat: repeat-y;
+}
+
+/* NEW: Better font rendering for handwriting */
+.font-handwriting1,
+.font-handwriting2,
+.font-handwriting3,
+.font-handwriting4,
+.font-handwriting5,
+.font-handwriting6,
+.font-handwriting7,
+.font-handwriting8,
+.font-handwriting9,
+.font-handwriting10,
+.font-handwriting11 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
