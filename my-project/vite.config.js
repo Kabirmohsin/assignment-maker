@@ -7,4 +7,11 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  preview: {
+    host: true,
+    port: 4173,
+    allowedHosts: [
+      "assignment-maker-1.onrender.com"
+    ],
+  },
 })
